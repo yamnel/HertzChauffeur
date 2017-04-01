@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722888BB1E904A2500C23F4E /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722888BA1E904A2500C23F4E /* XivelySDK.framework */; };
+		72AB24EB1E9051250067C93F /* XiveleyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AB24EA1E9051250067C93F /* XiveleyConnect.m */; };
 		F80F586F1E9041D100B00EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F586E1E9041D100B00EA2 /* AppDelegate.swift */; };
 		F80F58711E9041D100B00EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F58701E9041D100B00EA2 /* ViewController.swift */; };
 		F80F58741E9041D100B00EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80F58721E9041D100B00EA2 /* Main.storyboard */; };
@@ -35,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		722888B41E90479D00C23F4E /* XivelySDKiOS.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; name = XivelySDKiOS.xcworkspace; path = "xively-mobile-sdk-ios/XivelySDKiOS/XivelySDKiOS.xcworkspace"; sourceTree = "<group>"; };
+		722888BA1E904A2500C23F4E /* XivelySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XivelySDK.framework; path = "xively-mobile-sdk-ios/XivelySDKiOS/build/XivelySDK.framework"; sourceTree = "<group>"; };
+		72AB24E91E9051240067C93F /* HertzChauffeur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HertzChauffeur-Bridging-Header.h"; sourceTree = "<group>"; };
+		72AB24EA1E9051250067C93F /* XiveleyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiveleyConnect.m; sourceTree = "<group>"; };
 		F80F586B1E9041D100B00EA2 /* HertzChauffeur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HertzChauffeur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80F586E1E9041D100B00EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80F58701E9041D100B00EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,38 +75,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8D3CFEA1E90590F00EC0507 /* AlchemyDataNewsV1.framework in Frameworks */,
-				F8D3CFEB1E90590F00EC0507 /* AlchemyLanguageV1.framework in Frameworks */,
-				F8D3CFEC1E90590F00EC0507 /* AlchemyVisionV1.framework in Frameworks */,
-				F8D3CFED1E90590F00EC0507 /* ConversationV1.framework in Frameworks */,
-				F8D3CFEE1E90590F00EC0507 /* DialogV1.framework in Frameworks */,
-				F8D3CFEF1E90590F00EC0507 /* DiscoveryV1.framework in Frameworks */,
-				F8D3CFF01E90590F00EC0507 /* DocumentConversionV1.framework in Frameworks */,
-				F8D3CFF11E90590F00EC0507 /* LanguageTranslatorV2.framework in Frameworks */,
-				F8D3CFF21E90590F00EC0507 /* NaturalLanguageClassifierV1.framework in Frameworks */,
-				F8D3CFF31E90590F00EC0507 /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
-				F8D3CFF41E90590F00EC0507 /* PersonalityInsightsV2.framework in Frameworks */,
-				F8D3CFF51E90590F00EC0507 /* PersonalityInsightsV3.framework in Frameworks */,
-				F8D3CFF61E90590F00EC0507 /* RelationshipExtractionV1Beta.framework in Frameworks */,
-				F8D3CFF71E90590F00EC0507 /* RestKit.framework in Frameworks */,
-				F8D3CFF81E90590F00EC0507 /* RetrieveAndRankV1.framework in Frameworks */,
-				F8D3CFF91E90590F00EC0507 /* SpeechToTextV1.framework in Frameworks */,
-				F8D3CFFA1E90590F00EC0507 /* TextToSpeechV1.framework in Frameworks */,
-				F8D3CFFB1E90590F00EC0507 /* ToneAnalyzerV3.framework in Frameworks */,
-				F8D3CFFC1E90590F00EC0507 /* TradeoffAnalyticsV1.framework in Frameworks */,
-				F8D3CFFD1E90590F00EC0507 /* VisualRecognitionV3.framework in Frameworks */,
+				722888BB1E904A2500C23F4E /* XivelySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		722888B31E90479D00C23F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				722888BA1E904A2500C23F4E /* XivelySDK.framework */,
+				722888B41E90479D00C23F4E /* XivelySDKiOS.xcworkspace */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F80F58621E9041D100B00EA2 = {
 			isa = PBXGroup;
 			children = (
 				F80F586D1E9041D100B00EA2 /* HertzChauffeur */,
 				F80F586C1E9041D100B00EA2 /* Products */,
-				F8D3CFD51E90590E00EC0507 /* Frameworks */,
+				722888B31E90479D00C23F4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +117,8 @@
 				F80F58751E9041D100B00EA2 /* Assets.xcassets */,
 				F80F58771E9041D100B00EA2 /* LaunchScreen.storyboard */,
 				F80F587A1E9041D100B00EA2 /* Info.plist */,
+				72AB24EA1E9051250067C93F /* XiveleyConnect.m */,
+				72AB24E91E9051240067C93F /* HertzChauffeur-Bridging-Header.h */,
 			);
 			path = HertzChauffeur;
 			sourceTree = "<group>";
@@ -185,6 +183,7 @@
 					F80F586A1E9041D100B00EA2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4U642UQEDA;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -227,6 +226,7 @@
 			files = (
 				F80F58711E9041D100B00EA2 /* ViewController.swift in Sources */,
 				F80F586F1E9041D100B00EA2 /* AppDelegate.swift in Sources */,
+				72AB24EB1E9051250067C93F /* XiveleyConnect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,11 +349,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4U642UQEDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+				);
 				INFOPLIST_FILE = HertzChauffeur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamnel.HertzChauffeur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HertzChauffeur/HertzChauffeur-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -362,11 +375,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4U642UQEDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+				);
 				INFOPLIST_FILE = HertzChauffeur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamnel.HertzChauffeur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HertzChauffeur/HertzChauffeur-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
