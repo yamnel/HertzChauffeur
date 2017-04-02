@@ -16,6 +16,8 @@
 		F80E77731E90C34900A2395A /* watsonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E77711E90C34900A2395A /* watsonicon.png */; };
 		F80E77751E90CBE800A2395A /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E77741E90CBE800A2395A /* Car.swift */; };
 		F80E77771E90D92600A2395A /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80E77761E90D92600A2395A /* Customer.swift */; };
+		F80E777C1E911E3900A2395A /* appleMic2.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E777A1E911E3900A2395A /* appleMic2.png */; };
+		F80E777D1E911E3900A2395A /* appleMicCancel.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E777B1E911E3900A2395A /* appleMicCancel.png */; };
 		F80F586F1E9041D100B00EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F586E1E9041D100B00EA2 /* AppDelegate.swift */; };
 		F80F58711E9041D100B00EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F58701E9041D100B00EA2 /* ViewController.swift */; };
 		F80F58741E9041D100B00EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80F58721E9041D100B00EA2 /* Main.storyboard */; };
@@ -110,6 +112,8 @@
 		F80E77711E90C34900A2395A /* watsonicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watsonicon.png; sourceTree = "<group>"; };
 		F80E77741E90CBE800A2395A /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		F80E77761E90D92600A2395A /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		F80E777A1E911E3900A2395A /* appleMic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appleMic2.png; sourceTree = "<group>"; };
+		F80E777B1E911E3900A2395A /* appleMicCancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appleMicCancel.png; sourceTree = "<group>"; };
 		F80F586B1E9041D100B00EA2 /* HertzChauffeur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HertzChauffeur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80F586E1E9041D100B00EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80F58701E9041D100B00EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 				F80F58751E9041D100B00EA2 /* Assets.xcassets */,
 				F80F58771E9041D100B00EA2 /* LaunchScreen.storyboard */,
 				F80F587A1E9041D100B00EA2 /* Info.plist */,
+				F80E777A1E911E3900A2395A /* appleMic2.png */,
+				F80E777B1E911E3900A2395A /* appleMicCancel.png */,
 				F8263BB71E9068E700B2281D /* logo_hertz_app.png */,
 				F80E77701E90C34900A2395A /* dollarwide.png */,
 				72D3738E1E90E585000AE97F /* dollarTransparent.png */,
@@ -320,10 +326,12 @@
 				F80F58791E9041D100B00EA2 /* LaunchScreen.storyboard in Resources */,
 				72D3738F1E90E585000AE97F /* dollarTransparent.png in Resources */,
 				F80E776F1E90BD9A00A2395A /* ThriftyLogo.png in Resources */,
+				F80E777D1E911E3900A2395A /* appleMicCancel.png in Resources */,
 				F80E77731E90C34900A2395A /* watsonicon.png in Resources */,
 				F80F58761E9041D100B00EA2 /* Assets.xcassets in Resources */,
 				F8263BB81E9068E700B2281D /* logo_hertz_app.png in Resources */,
 				F80F58741E9041D100B00EA2 /* Main.storyboard in Resources */,
+				F80E777C1E911E3900A2395A /* appleMic2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
