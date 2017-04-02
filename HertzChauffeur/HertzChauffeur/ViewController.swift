@@ -72,9 +72,11 @@ class ViewController: UIViewController {
             if let result = result {
                 self.myTextView.text =
                     result.bestTranscription.formattedString
-                finished = result.isFinal
+                //finished = result.isFinal
+                //result.isFinal = (self.speechRecognitionTask?.isFinishing)!
+                finished = (self.speechRecognitionTask?.isFinishing)!
             }
-            if error != nil || (self.speechRecognitionTask?.isFinishing)! {
+            if error != nil || finished {
 //            if error != nil || finished {
                 self.audioEngine.stop()
                 inputNode.removeTap(onBus: 0)
