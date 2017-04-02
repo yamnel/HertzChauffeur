@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>565462017252-ganta6bqihs3e9c3vbbmjsj65u4bhp5i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.565462017252-ganta6bqihs3e9c3vbbmjsj65u4bhp5i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAXNmwOOqNHGX0EDSqVXSzfgPTQHWaMHVQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>565462017252</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yamnel.HertzChauffeur</string>
+	<key>PROJECT_ID</key>
+	<string>chauffeur-e0691</string>
+	<key>STORAGE_BUCKET</key>
+	<string>chauffeur-e0691.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:565462017252:ios:5f81b72dca355c40</string>
+	<key>DATABASE_URL</key>
+	<string>https://chauffeur-e0691.firebaseio.com</string>
+</dict>
+</plist>

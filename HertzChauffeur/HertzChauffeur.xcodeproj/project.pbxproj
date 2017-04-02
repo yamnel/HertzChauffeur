@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EC9BEBFED92880BD7090A93 /* Pods_HertzChauffeur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105C36CF120EFEB3741E5C6F /* Pods_HertzChauffeur.framework */; };
 		72AB24EB1E9051250067C93F /* XiveleyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AB24EA1E9051250067C93F /* XiveleyConnect.m */; };
+		72D3738D1E90DD79000AE97F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D3738C1E90DD79000AE97F /* GoogleService-Info.plist */; };
 		F80E776F1E90BD9A00A2395A /* ThriftyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */; };
 		F80E77721E90C34900A2395A /* dollarwide.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E77701E90C34900A2395A /* dollarwide.png */; };
 		F80E77731E90C34900A2395A /* watsonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E77711E90C34900A2395A /* watsonicon.png */; };
@@ -94,7 +96,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		105C36CF120EFEB3741E5C6F /* Pods_HertzChauffeur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HertzChauffeur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AB24EA1E9051250067C93F /* XiveleyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiveleyConnect.m; sourceTree = "<group>"; };
+		72D3738C1E90DD79000AE97F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9BD03D905F6D541F068897CB /* Pods-HertzChauffeur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HertzChauffeur.release.xcconfig"; path = "Pods/Target Support Files/Pods-HertzChauffeur/Pods-HertzChauffeur.release.xcconfig"; sourceTree = "<group>"; };
+		D28DF1A8D21FA626AFC4ABB1 /* Pods-HertzChauffeur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HertzChauffeur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HertzChauffeur/Pods-HertzChauffeur.debug.xcconfig"; sourceTree = "<group>"; };
 		F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThriftyLogo.png; sourceTree = "<group>"; };
 		F80E77701E90C34900A2395A /* dollarwide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollarwide.png; sourceTree = "<group>"; };
 		F80E77711E90C34900A2395A /* watsonicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watsonicon.png; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				F872E4DE1E90907800C8D8D6 /* TextToSpeechV1.framework in Frameworks */,
 				F872E4D21E90907800C8D8D6 /* PersonalityInsightsV2.framework in Frameworks */,
 				F872E4C81E90907800C8D8D6 /* DiscoveryV1.framework in Frameworks */,
+				0EC9BEBFED92880BD7090A93 /* Pods_HertzChauffeur.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +192,7 @@
 				F872E4A61E90905800C8D8D6 /* TradeoffAnalyticsV1.framework */,
 				F872E4A71E90905800C8D8D6 /* VisualRecognitionV3.framework */,
 				F872E4A81E90905800C8D8D6 /* XivelySDK.framework */,
+				105C36CF120EFEB3741E5C6F /* Pods_HertzChauffeur.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				F80F586D1E9041D100B00EA2 /* HertzChauffeur */,
 				F80F586C1E9041D100B00EA2 /* Products */,
 				722888B31E90479D00C23F4E /* Frameworks */,
+				FB3C316C131B0BBE8C51244D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -219,8 +228,18 @@
 				F80E77701E90C34900A2395A /* dollarwide.png */,
 				F80E77711E90C34900A2395A /* watsonicon.png */,
 				F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */,
+				72D3738C1E90DD79000AE97F /* GoogleService-Info.plist */,
 			);
 			path = HertzChauffeur;
+			sourceTree = "<group>";
+		};
+		FB3C316C131B0BBE8C51244D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D28DF1A8D21FA626AFC4ABB1 /* Pods-HertzChauffeur.debug.xcconfig */,
+				9BD03D905F6D541F068897CB /* Pods-HertzChauffeur.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,10 +249,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F80F587D1E9041D100B00EA2 /* Build configuration list for PBXNativeTarget "HertzChauffeur" */;
 			buildPhases = (
+				8A84C55D97ADB12CC9A3349C /* [CP] Check Pods Manifest.lock */,
 				F80F58671E9041D100B00EA2 /* Sources */,
 				F80F58681E9041D100B00EA2 /* Frameworks */,
 				F80F58691E9041D100B00EA2 /* Resources */,
 				F82323871E9080DE004FA8DC /* Embed Frameworks */,
+				045191EB5BEE5571673516B0 /* [CP] Embed Pods Frameworks */,
+				F979EF0A6F63B8C51B57A0A4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F80E77721E90C34900A2395A /* dollarwide.png in Resources */,
+				72D3738D1E90DD79000AE97F /* GoogleService-Info.plist in Resources */,
 				F80F58791E9041D100B00EA2 /* LaunchScreen.storyboard in Resources */,
 				F80E776F1E90BD9A00A2395A /* ThriftyLogo.png in Resources */,
 				F80E77731E90C34900A2395A /* watsonicon.png in Resources */,
@@ -295,6 +318,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		045191EB5BEE5571673516B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HertzChauffeur/Pods-HertzChauffeur-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A84C55D97ADB12CC9A3349C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F979EF0A6F63B8C51B57A0A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HertzChauffeur/Pods-HertzChauffeur-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F80F58671E9041D100B00EA2 /* Sources */ = {
@@ -424,6 +495,7 @@
 		};
 		F80F587E1E9041D100B00EA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28DF1A8D21FA626AFC4ABB1 /* Pods-HertzChauffeur.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U642UQEDA;
@@ -448,6 +520,7 @@
 		};
 		F80F587F1E9041D100B00EA2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD03D905F6D541F068897CB /* Pods-HertzChauffeur.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U642UQEDA;

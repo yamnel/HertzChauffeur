@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo_hertz_app.png" translatesAutoresizingMaskIntoConstraints="NO" id="yRO-LM-Yrc">
-                                <rect key="frame" x="57.666666666666657" y="28" width="299" height="86"/>
+                                <rect key="frame" x="58" y="28" width="299" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="299" id="9ne-CU-lIJ"/>
                                     <constraint firstAttribute="height" constant="86" id="s6Z-Rn-SX5"/>
@@ -61,7 +61,7 @@
                                     <constraint firstAttribute="width" constant="131" id="kTu-FX-cI7"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DollarLogo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-DQ-Gcp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dollarwide.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-DQ-Gcp">
                                 <rect key="frame" x="221" y="122" width="77" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="5Bi-6D-4P8"/>
@@ -123,8 +123,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DollarLogo.gif" width="158" height="78"/>
         <image name="ThriftyLogo.png" width="2000" height="551"/>
+        <image name="dollarwide.png" width="126" height="62"/>
         <image name="logo_hertz_app.png" width="178" height="48"/>
         <image name="watsonicon.png" width="1253" height="1253"/>
     </resources>
