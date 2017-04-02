@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,23 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LY2-7I-Xn8">
-                                <rect key="frame" x="71" y="401" width="272" height="230"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LY2-7I-Xn8">
+                                <rect key="frame" x="71" y="401" width="271" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="b4h-PJ-RBY"/>
-                                    <constraint firstAttribute="width" constant="272" id="jZ5-4N-Noq"/>
-                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky7-52-x8W">
-                                <rect key="frame" x="96" y="313" width="222" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="LPT-Mz-K55"/>
-                                    <constraint firstAttribute="width" constant="222" id="mga-K7-tCe"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky7-52-x8W">
+                                <rect key="frame" x="96" y="313" width="221" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="Send">
                                     <color key="titleColor" red="1" green="0.1791670759" blue="0.1937678192" alpha="1" colorSpace="calibratedRGB"/>
@@ -47,40 +40,25 @@
                                     <action selector="stopTranscribing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8PO-fT-Srs"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo_hertz_app.png" translatesAutoresizingMaskIntoConstraints="NO" id="yRO-LM-Yrc">
-                                <rect key="frame" x="57.666666666666657" y="28" width="299" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="299" id="9ne-CU-lIJ"/>
-                                    <constraint firstAttribute="height" constant="86" id="s6Z-Rn-SX5"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_hertz_app.png" translatesAutoresizingMaskIntoConstraints="NO" id="yRO-LM-Yrc">
+                                <rect key="frame" x="58" y="28" width="298" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ThriftyLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vkb-yy-j8m">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ThriftyLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vkb-yy-j8m">
                                 <rect key="frame" x="65" y="127" width="131" height="28"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="Vsv-43-Paz"/>
-                                    <constraint firstAttribute="width" constant="131" id="kTu-FX-cI7"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DollarLogo.gif" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-DQ-Gcp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dollarwide.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-DQ-Gcp">
                                 <rect key="frame" x="221" y="122" width="77" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="5Bi-6D-4P8"/>
-                                    <constraint firstAttribute="width" constant="77" id="vYL-0t-Uro"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="watsonicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="vty-kU-bxJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watsonicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="vty-kU-bxJ">
                                 <rect key="frame" x="0.0" y="688" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="7l5-vY-BK1"/>
-                                    <constraint firstAttribute="width" constant="40" id="zcN-4Z-9tf"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qR-Zi-Pta">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qR-Zi-Pta">
                                 <rect key="frame" x="57" y="237" width="324" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="324" id="6Jv-u5-zsm"/>
-                                    <constraint firstAttribute="height" constant="68" id="o1b-Wc-Djd"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="Give Command">
                                     <color key="titleColor" red="0.35258306859999999" green="1" blue="0.34705558739999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -91,25 +69,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="a3G-DQ-Gcp" firstAttribute="leading" secondItem="vkb-yy-j8m" secondAttribute="trailing" constant="25" id="30h-88-DET"/>
-                            <constraint firstItem="ky7-52-x8W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ry-SO-FMs"/>
-                            <constraint firstItem="9qR-Zi-Pta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BWC-xy-VXg"/>
-                            <constraint firstItem="vkb-yy-j8m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="Itv-zn-oiE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ky7-52-x8W" secondAttribute="trailing" constant="76" id="Lmr-gR-CPE"/>
-                            <constraint firstItem="LY2-7I-Xn8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJS-lp-afu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="yRO-LM-Yrc" secondAttribute="trailing" constant="37.333333333333371" id="Xkv-S5-atJ"/>
-                            <constraint firstItem="ky7-52-x8W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="76" id="bfJ-Ry-MQw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vty-kU-bxJ" secondAttribute="trailing" constant="354" id="dt3-sJ-gBZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="a3G-DQ-Gcp" secondAttribute="trailing" constant="96" id="g55-WS-f2t"/>
-                            <constraint firstItem="LY2-7I-Xn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="ghE-gB-rMk"/>
-                            <constraint firstItem="yRO-LM-Yrc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvq-ZC-VQY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LY2-7I-Xn8" secondAttribute="trailing" constant="51" id="mxG-Yt-Pue"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9qR-Zi-Pta" secondAttribute="trailing" constant="13" id="nkR-8L-Q2c"/>
-                            <constraint firstItem="yRO-LM-Yrc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37.666666666666657" id="oCL-Wj-rEo"/>
-                            <constraint firstItem="vty-kU-bxJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="qzy-zT-Y56"/>
-                            <constraint firstItem="9qR-Zi-Pta" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37" id="tdo-Cz-ApH"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="myTextView" destination="LY2-7I-Xn8" id="5OH-9e-Y21"/>
@@ -123,8 +82,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="DollarLogo.gif" width="158" height="78"/>
         <image name="ThriftyLogo.png" width="2000" height="551"/>
+        <image name="dollarwide.png" width="126" height="62"/>
         <image name="logo_hertz_app.png" width="178" height="48"/>
         <image name="watsonicon.png" width="1253" height="1253"/>
     </resources>
