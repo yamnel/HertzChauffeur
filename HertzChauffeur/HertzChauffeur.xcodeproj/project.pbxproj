@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72AB24EB1E9051250067C93F /* XiveleyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AB24EA1E9051250067C93F /* XiveleyConnect.m */; };
 		F80F586F1E9041D100B00EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F586E1E9041D100B00EA2 /* AppDelegate.swift */; };
 		F80F58711E9041D100B00EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F58701E9041D100B00EA2 /* ViewController.swift */; };
 		F80F58741E9041D100B00EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80F58721E9041D100B00EA2 /* Main.storyboard */; };
@@ -15,7 +16,42 @@
 		F8263BB81E9068E700B2281D /* logo_hertz_app.png in Resources */ = {isa = PBXBuildFile; fileRef = F8263BB71E9068E700B2281D /* logo_hertz_app.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F82323871E9080DE004FA8DC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F823237E1E9080DD004FA8DC /* TextToSpeechV1.framework in Embed Frameworks */,
+				F823236C1E9080DD004FA8DC /* LanguageTranslatorV2.framework in Embed Frameworks */,
+				F82323621E9080DD004FA8DC /* AlchemyVisionV1.framework in Embed Frameworks */,
+				F82323801E9080DD004FA8DC /* ToneAnalyzerV3.framework in Embed Frameworks */,
+				F82323761E9080DD004FA8DC /* RelationshipExtractionV1Beta.framework in Embed Frameworks */,
+				F823235E1E9080DD004FA8DC /* AlchemyDataNewsV1.framework in Embed Frameworks */,
+				F82323661E9080DD004FA8DC /* DialogV1.framework in Embed Frameworks */,
+				F82323641E9080DD004FA8DC /* ConversationV1.framework in Embed Frameworks */,
+				F823237A1E9080DD004FA8DC /* RetrieveAndRankV1.framework in Embed Frameworks */,
+				F82323821E9080DD004FA8DC /* TradeoffAnalyticsV1.framework in Embed Frameworks */,
+				F823236A1E9080DD004FA8DC /* DocumentConversionV1.framework in Embed Frameworks */,
+				F82323841E9080DD004FA8DC /* VisualRecognitionV3.framework in Embed Frameworks */,
+				F82323701E9080DD004FA8DC /* NaturalLanguageUnderstandingV1.framework in Embed Frameworks */,
+				F82323721E9080DD004FA8DC /* PersonalityInsightsV2.framework in Embed Frameworks */,
+				F82323781E9080DD004FA8DC /* RestKit.framework in Embed Frameworks */,
+				F823237C1E9080DD004FA8DC /* SpeechToTextV1.framework in Embed Frameworks */,
+				F82323681E9080DD004FA8DC /* DiscoveryV1.framework in Embed Frameworks */,
+				F82323601E9080DD004FA8DC /* AlchemyLanguageV1.framework in Embed Frameworks */,
+				F823236E1E9080DD004FA8DC /* NaturalLanguageClassifierV1.framework in Embed Frameworks */,
+				F82323741E9080DD004FA8DC /* PersonalityInsightsV3.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		72AB24E91E9051240067C93F /* HertzChauffeur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HertzChauffeur-Bridging-Header.h"; sourceTree = "<group>"; };
+		72AB24EA1E9051250067C93F /* XiveleyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiveleyConnect.m; sourceTree = "<group>"; };
 		F80F586B1E9041D100B00EA2 /* HertzChauffeur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HertzChauffeur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80F586E1E9041D100B00EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80F58701E9041D100B00EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +67,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82323881E908120004FA8DC /* XivelySDK.framework in Frameworks */,
+				F823237D1E9080DD004FA8DC /* TextToSpeechV1.framework in Frameworks */,
+				F823236B1E9080DD004FA8DC /* LanguageTranslatorV2.framework in Frameworks */,
+				F82323611E9080DD004FA8DC /* AlchemyVisionV1.framework in Frameworks */,
+				F823237F1E9080DD004FA8DC /* ToneAnalyzerV3.framework in Frameworks */,
+				F82323751E9080DD004FA8DC /* RelationshipExtractionV1Beta.framework in Frameworks */,
+				F823235D1E9080DD004FA8DC /* AlchemyDataNewsV1.framework in Frameworks */,
+				F82323651E9080DD004FA8DC /* DialogV1.framework in Frameworks */,
+				F82323631E9080DD004FA8DC /* ConversationV1.framework in Frameworks */,
+				F82323791E9080DD004FA8DC /* RetrieveAndRankV1.framework in Frameworks */,
+				F82323811E9080DD004FA8DC /* TradeoffAnalyticsV1.framework in Frameworks */,
+				F82323691E9080DD004FA8DC /* DocumentConversionV1.framework in Frameworks */,
+				F82323831E9080DD004FA8DC /* VisualRecognitionV3.framework in Frameworks */,
+				F823236F1E9080DD004FA8DC /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
+				F82323711E9080DD004FA8DC /* PersonalityInsightsV2.framework in Frameworks */,
+				F82323771E9080DD004FA8DC /* RestKit.framework in Frameworks */,
+				F823237B1E9080DD004FA8DC /* SpeechToTextV1.framework in Frameworks */,
+				F82323671E9080DD004FA8DC /* DiscoveryV1.framework in Frameworks */,
+				F823235F1E9080DD004FA8DC /* AlchemyLanguageV1.framework in Frameworks */,
+				F823236D1E9080DD004FA8DC /* NaturalLanguageClassifierV1.framework in Frameworks */,
+				F82323731E9080DD004FA8DC /* PersonalityInsightsV3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		722888B31E90479D00C23F4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F81011991E907A8B0055B381 /* AlchemyDataNewsV1.framework */,
+				F810119A1E907A8B0055B381 /* AlchemyLanguageV1.framework */,
+				F810119B1E907A8B0055B381 /* AlchemyVisionV1.framework */,
+				F810119C1E907A8B0055B381 /* ConversationV1.framework */,
+				F810119D1E907A8B0055B381 /* DialogV1.framework */,
+				F810119E1E907A8B0055B381 /* DiscoveryV1.framework */,
+				F810119F1E907A8B0055B381 /* DocumentConversionV1.framework */,
+				F81011A01E907A8B0055B381 /* LanguageTranslatorV2.framework */,
+				F81011A11E907A8B0055B381 /* NaturalLanguageClassifierV1.framework */,
+				F81011A21E907A8B0055B381 /* NaturalLanguageUnderstandingV1.framework */,
+				F81011A31E907A8B0055B381 /* PersonalityInsightsV2.framework */,
+				F81011A41E907A8B0055B381 /* PersonalityInsightsV3.framework */,
+				F81011A51E907A8B0055B381 /* RelationshipExtractionV1Beta.framework */,
+				F81011A61E907A8B0055B381 /* RestKit.framework */,
+				F81011A71E907A8B0055B381 /* RetrieveAndRankV1.framework */,
+				F81011A81E907A8B0055B381 /* SpeechToTextV1.framework */,
+				F81011A91E907A8B0055B381 /* TextToSpeechV1.framework */,
+				F81011AA1E907A8B0055B381 /* ToneAnalyzerV3.framework */,
+				F81011AB1E907A8B0055B381 /* TradeoffAnalyticsV1.framework */,
+				F81011AC1E907A8B0055B381 /* VisualRecognitionV3.framework */,
+				F81011AD1E907A8B0055B381 /* XivelySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F80F58621E9041D100B00EA2 = {
 			isa = PBXGroup;
 			children = (
 				F80F586D1E9041D100B00EA2 /* HertzChauffeur */,
 				F80F586C1E9041D100B00EA2 /* Products */,
+				722888B31E90479D00C23F4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +163,7 @@
 				F80F58671E9041D100B00EA2 /* Sources */,
 				F80F58681E9041D100B00EA2 /* Frameworks */,
 				F80F58691E9041D100B00EA2 /* Resources */,
+				F82323871E9080DE004FA8DC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,6 +230,7 @@
 			files = (
 				F80F58711E9041D100B00EA2 /* ViewController.swift in Sources */,
 				F80F586F1E9041D100B00EA2 /* AppDelegate.swift in Sources */,
+				72AB24EB1E9051250067C93F /* XiveleyConnect.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,8 +356,15 @@
 				DEVELOPMENT_TEAM = 4U642UQEDA;
 				INFOPLIST_FILE = HertzChauffeur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamnel.HertzChauffeur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HertzChauffeur/HertzChauffeur-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -281,8 +376,14 @@
 				DEVELOPMENT_TEAM = 4U642UQEDA;
 				INFOPLIST_FILE = HertzChauffeur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamnel.HertzChauffeur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "HertzChauffeur/HertzChauffeur-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
