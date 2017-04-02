@@ -10,6 +10,7 @@
 		0EC9BEBFED92880BD7090A93 /* Pods_HertzChauffeur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 105C36CF120EFEB3741E5C6F /* Pods_HertzChauffeur.framework */; };
 		72AB24EB1E9051250067C93F /* XiveleyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AB24EA1E9051250067C93F /* XiveleyConnect.m */; };
 		72D3738D1E90DD79000AE97F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72D3738C1E90DD79000AE97F /* GoogleService-Info.plist */; };
+		72D3738F1E90E585000AE97F /* dollarTransparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 72D3738E1E90E585000AE97F /* dollarTransparent.png */; };
 		F80E776F1E90BD9A00A2395A /* ThriftyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */; };
 		F80E77721E90C34900A2395A /* dollarwide.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E77701E90C34900A2395A /* dollarwide.png */; };
 		F80E77731E90C34900A2395A /* watsonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E77711E90C34900A2395A /* watsonicon.png */; };
@@ -101,6 +102,7 @@
 		105C36CF120EFEB3741E5C6F /* Pods_HertzChauffeur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HertzChauffeur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72AB24EA1E9051250067C93F /* XiveleyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiveleyConnect.m; sourceTree = "<group>"; };
 		72D3738C1E90DD79000AE97F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72D3738E1E90E585000AE97F /* dollarTransparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollarTransparent.png; sourceTree = "<group>"; };
 		9BD03D905F6D541F068897CB /* Pods-HertzChauffeur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HertzChauffeur.release.xcconfig"; path = "Pods/Target Support Files/Pods-HertzChauffeur/Pods-HertzChauffeur.release.xcconfig"; sourceTree = "<group>"; };
 		D28DF1A8D21FA626AFC4ABB1 /* Pods-HertzChauffeur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HertzChauffeur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HertzChauffeur/Pods-HertzChauffeur.debug.xcconfig"; sourceTree = "<group>"; };
 		F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThriftyLogo.png; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				F80F587A1E9041D100B00EA2 /* Info.plist */,
 				F8263BB71E9068E700B2281D /* logo_hertz_app.png */,
 				F80E77701E90C34900A2395A /* dollarwide.png */,
+				72D3738E1E90E585000AE97F /* dollarTransparent.png */,
 				F80E77711E90C34900A2395A /* watsonicon.png */,
 				F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */,
 				72D3738C1E90DD79000AE97F /* GoogleService-Info.plist */,
@@ -315,6 +318,7 @@
 				F80E77721E90C34900A2395A /* dollarwide.png in Resources */,
 				72D3738D1E90DD79000AE97F /* GoogleService-Info.plist in Resources */,
 				F80F58791E9041D100B00EA2 /* LaunchScreen.storyboard in Resources */,
+				72D3738F1E90E585000AE97F /* dollarTransparent.png in Resources */,
 				F80E776F1E90BD9A00A2395A /* ThriftyLogo.png in Resources */,
 				F80E77731E90C34900A2395A /* watsonicon.png in Resources */,
 				F80F58761E9041D100B00EA2 /* Assets.xcassets in Resources */,

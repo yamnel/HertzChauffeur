@@ -51,10 +51,6 @@
                                 <rect key="frame" x="65" y="127" width="131" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="dollarwide.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-DQ-Gcp">
-                                <rect key="frame" x="221" y="122" width="77" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watsonicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="vty-kU-bxJ">
                                 <rect key="frame" x="0.0" y="688" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -70,6 +66,10 @@
                                     <action selector="startTranscribingWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfI-KJ-7sv"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dollarTransparent.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3G-DQ-Gcp">
+                                <rect key="frame" x="211" y="120" width="131" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -81,12 +81,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25.1953125" y="-3.5139092240117127"/>
+            <point key="canvasLocation" x="-26.086956521739133" y="-4.0760869565217392"/>
         </scene>
     </scenes>
     <resources>
         <image name="ThriftyLogo.png" width="2000" height="551"/>
-        <image name="dollarwide.png" width="126" height="62"/>
+        <image name="dollarTransparent.png" width="384" height="192"/>
         <image name="logo_hertz_app.png" width="178" height="48"/>
         <image name="watsonicon.png" width="1253" height="1253"/>
     </resources>
