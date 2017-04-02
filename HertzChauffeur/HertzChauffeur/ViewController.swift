@@ -10,6 +10,7 @@ import UIKit
 import ConversationV1
 import Speech
 import RestKit
+import Firebase
 
 
 // IMB's Watson Credentials
@@ -23,7 +24,8 @@ let conversation = Conversation(username: username, password: password, version:
 let workspaceID = "0d9d120b-0dc3-4f04-8ff0-2b10320a5269"
 let failure = { (error: Error) in print(error) } // for Fail message and logs
 
-
+//Initializes reference to Firebase object
+let ref  : FIRDatabaseReference! = FIRDatabase.database().reference()
 
 class ViewController: UIViewController {
     
@@ -40,10 +42,10 @@ class ViewController: UIViewController {
     private var rawReplyFromWatson: Context?
     private var replyFromWatson: [String]?
     
-    
     var systemToChange: String? // What we car system we want to change
     var systemValue: String?  // What we are changing it to
     
+    var values: [String:Any] = [:]
     
     @IBAction func startTranscribing(_sender: AnyObject) {
         startBtn.isEnabled = false;
@@ -89,7 +91,6 @@ class ViewController: UIViewController {
             }
         }
         
-        
         let recordingFormat = inputNode.outputFormat(forBus: 0)
         
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
@@ -103,14 +104,42 @@ class ViewController: UIViewController {
     
     // database syncronization
     func pushToDB (system: String, value: String){
+        
         print("\nSent \(system) and \(value)")  // testing
         
         if(system == "text"){
             // we'll display the text but not push
+            
         }else{
-            //do your magic
-        }
+            
+            if(system == "Engine" || system == "Lock"){
+                
+                if (value == "True"){
+                    
+                    values  = ["\(system)": true]
+               
+                } else if (value == "False"){
+                    
+                    values  = ["\(system)": false]
+                }
+            
+            } else if(system == "Speed" || system == "Volume" || system == "airTemp" || system == "fanSpeed"){
+                
+                values  = ["\(system)": Int(value)!]
+            }
+    
+        ref.child("Yamnel").updateChildValues(values, withCompletionBlock: { (err, ref) in
+                    
+            if err != nil {
+                        
+                print(err!)
+                        
+                return
+            }
+                    
+        })
         
+        }
     }
     
     
