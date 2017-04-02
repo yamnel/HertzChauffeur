@@ -38,12 +38,12 @@ class ViewController: UIViewController {
     private let audioEngine = AVAudioEngine()
     private var textToSendToWatson: String = ""
     private var rawReplyFromWatson: Context?
+    private var replyFromWatson: [String]?
+    
     
     var systemToChange: String? // What we car system we want to change
     var systemValue: String?  // What we are changing it to
     
-    
-//    private let commands: [String] = ["unlock my car"];
     
     @IBAction func startTranscribing(_sender: AnyObject) {
         startBtn.isEnabled = false;
@@ -54,30 +54,33 @@ class ViewController: UIViewController {
     
     // Starts listening
     func startSession() throws {
+        
+        
         if let recognitionTask = speechRecognitionTask {
             recognitionTask.cancel()
             self.speechRecognitionTask = nil
         }
+        
+        
         let audioSession = AVAudioSession.sharedInstance()
         try audioSession.setCategory(AVAudioSessionCategoryRecord)
+        
         speechRecognitionRequest = SFSpeechAudioBufferRecognitionRequest()
+        
         guard let recognitionRequest = speechRecognitionRequest else {
             fatalError("SFSpeechAudioBufferRecognitionRequest object creation failed") }
         guard let inputNode = audioEngine.inputNode else { fatalError("Audio engine has no input node") }
         
         recognitionRequest.shouldReportPartialResults = true
-        speechRecognitionTask = speechRecognizer.recognitionTask(with:
-        recognitionRequest) { result, error in
+        speechRecognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest) { result, error in
+            
             var finished = false
             if let result = result {
                 self.myTextView.text =
                     result.bestTranscription.formattedString
-                //finished = result.isFinal
-                //result.isFinal = (self.speechRecognitionTask?.isFinishing)!
-                finished = (self.speechRecognitionTask?.isFinishing)!
+                finished = result.isFinal
             }
             if error != nil || finished {
-//            if error != nil || finished {
                 self.audioEngine.stop()
                 inputNode.removeTap(onBus: 0)
                 self.speechRecognitionRequest = nil
@@ -85,15 +88,32 @@ class ViewController: UIViewController {
                 self.startBtn.isEnabled = true
             }
         }
+        
+        
         let recordingFormat = inputNode.outputFormat(forBus: 0)
-        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat)
-        { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
+        
+        inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer: AVAudioPCMBuffer, when: AVAudioTime) in
             self.speechRecognitionRequest?.append(buffer)
         }
         
         audioEngine.prepare()
         try audioEngine.start()
     }
+    
+    
+    // database syncronization
+    func pushToDB (system: String, value: String){
+        print("\nSent \(system) and \(value)")  // testing
+        
+        if(system == "text"){
+            // we'll display the text but not push
+        }else{
+            //do your magic
+        }
+        
+    }
+    
+    
     
     @IBAction func stopTranscribing(_ sender: AnyObject) {
         if audioEngine.isRunning {
@@ -102,26 +122,24 @@ class ViewController: UIViewController {
             startBtn.isEnabled = true
             stopButton.isEnabled = false
             
-            // Send to Watson.
             textToSendToWatson = myTextView.text.lowercased();
             
             print(textToSendToWatson.lowercased()); // Testing
-//            print(validateCommand(textToValidate: textToSendToWatson.lowercased()))
             
-            rawReplyFromWatson =  sendToWatson(voiceCommand: textToSendToWatson)
-//            for string in rawReplyFromWatson?.json {
-//                
-//            }
+            sendToWatson(voiceCommand: textToSendToWatson)
+            
         }
     }
     
     
     
-    func sendToWatson(voiceCommand: String) -> Context? {
+    
+    func sendToWatson(voiceCommand: String) {
         var rawAnswer: Context?
+        var sys: String = ""
+        var value: String = ""
         
         conversation.message(withWorkspace: workspaceID, failure: failure) { response in
-            print(response.output.text)
             rawAnswer = response.context
         }
         
@@ -129,54 +147,32 @@ class ViewController: UIViewController {
         
         conversation.message(withWorkspace: workspaceID, request: request, failure: failure) {
             response in
-            print(response.output.text)
-            rawAnswer = response.context
+            
+            self.replyFromWatson = response.output.text
+            
+            if self.replyFromWatson != nil && !(self.replyFromWatson?.isEmpty)!{
+                let reply: String = self.replyFromWatson![0]
+                
+                sys = reply.components(separatedBy: " ").first!
+                value = reply.components(separatedBy: " ").last!
+                
+                print("\(sys) is going to get passed to the DB")
+                print("\(value) is going to get passed to the DB")
+                
+            }
+            
+            if sys != ""{
+                self.pushToDB(system: sys, value: value)
+            }
+            
+            
         }
-        
-        return rawAnswer
-
     }
-    
-    
-    
-//    func validateCommand(textToValidate: String) -> BooleanLiteralType {
-//        for string in commands {
-//            if textToValidate == string {
-//                return true;
-//            }
-//        }
-//        return false;
-//    }
-//    
-    
-    
-    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         authorizeSpeechRecognition()
-
-        
-//        var context: Context? // save context to continue conversation
-//        conversation.message(withWorkspace: workspaceID, failure: failure) { response in
-//            print(response.output.text)
-//            context = response.context
-//        }
-        
-//        let text = "Turn the car on for me"
-        
-//        let request = MessageRequest(text: text, context: context)
-//        conversation.message(withWorkspace: workspaceID, request: request, failure: failure) {
-//            response in
-//            print(response.output.text)
-//            context = response.context
-//        }
-//        
-//        print(context?.toJSON() ?? "")
-        
     }
     
     
@@ -206,4 +202,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
