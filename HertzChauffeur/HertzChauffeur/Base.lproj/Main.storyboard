@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HertzChauffeur" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LY2-7I-Xn8">
+                                <rect key="frame" x="68" y="294" width="240" height="161"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="161" id="K1q-uN-Q76"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9qR-Zi-Pta">
+                                <rect key="frame" x="171" y="167" width="34" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.35258306859999999" green="1" blue="0.34705558739999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTranscribingWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cfI-KJ-7sv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ky7-52-x8W">
+                                <rect key="frame" x="172" y="216" width="32" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" red="1" green="0.1791670759" blue="0.1937678192" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopTranscribing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8PO-fT-Srs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_hertz_app.png" translatesAutoresizingMaskIntoConstraints="NO" id="yRO-LM-Yrc">
+                                <rect key="frame" x="54" y="28" width="267" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="k8u-gO-3QX"/>
+                                    <constraint firstAttribute="height" constant="86" id="s96-4q-Y7W"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ky7-52-x8W" firstAttribute="centerX" secondItem="LY2-7I-Xn8" secondAttribute="centerX" id="1ux-LE-Gzc"/>
+                            <constraint firstItem="yRO-LM-Yrc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2VT-Oh-uPn"/>
+                            <constraint firstItem="9qR-Zi-Pta" firstAttribute="centerX" secondItem="ky7-52-x8W" secondAttribute="centerX" id="9P4-rD-u1c"/>
+                            <constraint firstItem="9qR-Zi-Pta" firstAttribute="centerX" secondItem="yRO-LM-Yrc" secondAttribute="centerX" id="Q6R-n0-cPe"/>
+                            <constraint firstItem="LY2-7I-Xn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="SDa-kE-oAT"/>
+                            <constraint firstItem="ky7-52-x8W" firstAttribute="top" secondItem="9qR-Zi-Pta" secondAttribute="bottom" constant="19" id="Wmd-cq-ceR"/>
+                            <constraint firstItem="9qR-Zi-Pta" firstAttribute="top" secondItem="yRO-LM-Yrc" secondAttribute="bottom" constant="53" id="XHq-HG-BJY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LY2-7I-Xn8" secondAttribute="bottom" constant="212" id="iU4-vc-p9h"/>
+                            <constraint firstItem="yRO-LM-Yrc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="j4E-Yy-DF0"/>
+                            <constraint firstItem="LY2-7I-Xn8" firstAttribute="top" secondItem="ky7-52-x8W" secondAttribute="bottom" constant="48" id="omq-vh-six"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="myTextView" destination="LY2-7I-Xn8" id="5OH-9e-Y21"/>
+                        <outlet property="stopButton" destination="ky7-52-x8W" id="bPr-0l-ZaR"/>
+                        <outlet property="transcribeButton" destination="9qR-Zi-Pta" id="p2R-IS-r4A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-104.8" y="14.842578710644679"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_hertz_app.png" width="178" height="48"/>
+    </resources>
 </document>
