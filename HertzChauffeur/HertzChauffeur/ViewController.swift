@@ -8,6 +8,8 @@
 
 import UIKit
 import ConversationV1
+import Speech
+
 
 //
 let username = "4fb1fe78-67be-4d52-9261-f44222e8a9b1"

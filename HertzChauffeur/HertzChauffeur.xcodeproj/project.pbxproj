@@ -14,6 +14,47 @@
 		F80F58761E9041D100B00EA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80F58751E9041D100B00EA2 /* Assets.xcassets */; };
 		F80F58791E9041D100B00EA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80F58771E9041D100B00EA2 /* LaunchScreen.storyboard */; };
 		F8263BB81E9068E700B2281D /* logo_hertz_app.png in Resources */ = {isa = PBXBuildFile; fileRef = F8263BB71E9068E700B2281D /* logo_hertz_app.png */; };
+		F872E4BD1E90905800C8D8D6 /* XivelySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A81E90905800C8D8D6 /* XivelySDK.framework */; };
+		F872E4BE1E90907800C8D8D6 /* AlchemyDataNewsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4941E90905800C8D8D6 /* AlchemyDataNewsV1.framework */; };
+		F872E4BF1E90907800C8D8D6 /* AlchemyDataNewsV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4941E90905800C8D8D6 /* AlchemyDataNewsV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4C01E90907800C8D8D6 /* AlchemyLanguageV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4951E90905800C8D8D6 /* AlchemyLanguageV1.framework */; };
+		F872E4C11E90907800C8D8D6 /* AlchemyLanguageV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4951E90905800C8D8D6 /* AlchemyLanguageV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4C21E90907800C8D8D6 /* AlchemyVisionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4961E90905800C8D8D6 /* AlchemyVisionV1.framework */; };
+		F872E4C31E90907800C8D8D6 /* AlchemyVisionV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4961E90905800C8D8D6 /* AlchemyVisionV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4C41E90907800C8D8D6 /* ConversationV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4971E90905800C8D8D6 /* ConversationV1.framework */; };
+		F872E4C51E90907800C8D8D6 /* ConversationV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4971E90905800C8D8D6 /* ConversationV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4C61E90907800C8D8D6 /* DialogV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4981E90905800C8D8D6 /* DialogV1.framework */; };
+		F872E4C71E90907800C8D8D6 /* DialogV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4981E90905800C8D8D6 /* DialogV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4C81E90907800C8D8D6 /* DiscoveryV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4991E90905800C8D8D6 /* DiscoveryV1.framework */; };
+		F872E4C91E90907800C8D8D6 /* DiscoveryV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4991E90905800C8D8D6 /* DiscoveryV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4CA1E90907800C8D8D6 /* DocumentConversionV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49A1E90905800C8D8D6 /* DocumentConversionV1.framework */; };
+		F872E4CB1E90907800C8D8D6 /* DocumentConversionV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49A1E90905800C8D8D6 /* DocumentConversionV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4CC1E90907800C8D8D6 /* LanguageTranslatorV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49B1E90905800C8D8D6 /* LanguageTranslatorV2.framework */; };
+		F872E4CD1E90907800C8D8D6 /* LanguageTranslatorV2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49B1E90905800C8D8D6 /* LanguageTranslatorV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4CE1E90907800C8D8D6 /* NaturalLanguageClassifierV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49C1E90905800C8D8D6 /* NaturalLanguageClassifierV1.framework */; };
+		F872E4CF1E90907800C8D8D6 /* NaturalLanguageClassifierV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49C1E90905800C8D8D6 /* NaturalLanguageClassifierV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4D01E90907800C8D8D6 /* NaturalLanguageUnderstandingV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49D1E90905800C8D8D6 /* NaturalLanguageUnderstandingV1.framework */; };
+		F872E4D11E90907800C8D8D6 /* NaturalLanguageUnderstandingV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49D1E90905800C8D8D6 /* NaturalLanguageUnderstandingV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4D21E90907800C8D8D6 /* PersonalityInsightsV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49E1E90905800C8D8D6 /* PersonalityInsightsV2.framework */; };
+		F872E4D31E90907800C8D8D6 /* PersonalityInsightsV2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49E1E90905800C8D8D6 /* PersonalityInsightsV2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4D41E90907800C8D8D6 /* PersonalityInsightsV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49F1E90905800C8D8D6 /* PersonalityInsightsV3.framework */; };
+		F872E4D51E90907800C8D8D6 /* PersonalityInsightsV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E49F1E90905800C8D8D6 /* PersonalityInsightsV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4D61E90907800C8D8D6 /* RelationshipExtractionV1Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A01E90905800C8D8D6 /* RelationshipExtractionV1Beta.framework */; };
+		F872E4D71E90907800C8D8D6 /* RelationshipExtractionV1Beta.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A01E90905800C8D8D6 /* RelationshipExtractionV1Beta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4D81E90907800C8D8D6 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A11E90905800C8D8D6 /* RestKit.framework */; };
+		F872E4D91E90907800C8D8D6 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A11E90905800C8D8D6 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4DA1E90907800C8D8D6 /* RetrieveAndRankV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A21E90905800C8D8D6 /* RetrieveAndRankV1.framework */; };
+		F872E4DB1E90907800C8D8D6 /* RetrieveAndRankV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A21E90905800C8D8D6 /* RetrieveAndRankV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4DC1E90907800C8D8D6 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A31E90905800C8D8D6 /* SpeechToTextV1.framework */; };
+		F872E4DD1E90907800C8D8D6 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A31E90905800C8D8D6 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4DE1E90907800C8D8D6 /* TextToSpeechV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A41E90905800C8D8D6 /* TextToSpeechV1.framework */; };
+		F872E4DF1E90907800C8D8D6 /* TextToSpeechV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A41E90905800C8D8D6 /* TextToSpeechV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4E01E90907800C8D8D6 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A51E90905800C8D8D6 /* ToneAnalyzerV3.framework */; };
+		F872E4E11E90907800C8D8D6 /* ToneAnalyzerV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A51E90905800C8D8D6 /* ToneAnalyzerV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4E21E90907800C8D8D6 /* TradeoffAnalyticsV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A61E90905800C8D8D6 /* TradeoffAnalyticsV1.framework */; };
+		F872E4E31E90907800C8D8D6 /* TradeoffAnalyticsV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A61E90905800C8D8D6 /* TradeoffAnalyticsV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F872E4E41E90907800C8D8D6 /* VisualRecognitionV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A71E90905800C8D8D6 /* VisualRecognitionV3.framework */; };
+		F872E4E51E90907800C8D8D6 /* VisualRecognitionV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F872E4A71E90905800C8D8D6 /* VisualRecognitionV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,26 +64,26 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F823237E1E9080DD004FA8DC /* TextToSpeechV1.framework in Embed Frameworks */,
-				F823236C1E9080DD004FA8DC /* LanguageTranslatorV2.framework in Embed Frameworks */,
-				F82323621E9080DD004FA8DC /* AlchemyVisionV1.framework in Embed Frameworks */,
-				F82323801E9080DD004FA8DC /* ToneAnalyzerV3.framework in Embed Frameworks */,
-				F82323761E9080DD004FA8DC /* RelationshipExtractionV1Beta.framework in Embed Frameworks */,
-				F823235E1E9080DD004FA8DC /* AlchemyDataNewsV1.framework in Embed Frameworks */,
-				F82323661E9080DD004FA8DC /* DialogV1.framework in Embed Frameworks */,
-				F82323641E9080DD004FA8DC /* ConversationV1.framework in Embed Frameworks */,
-				F823237A1E9080DD004FA8DC /* RetrieveAndRankV1.framework in Embed Frameworks */,
-				F82323821E9080DD004FA8DC /* TradeoffAnalyticsV1.framework in Embed Frameworks */,
-				F823236A1E9080DD004FA8DC /* DocumentConversionV1.framework in Embed Frameworks */,
-				F82323841E9080DD004FA8DC /* VisualRecognitionV3.framework in Embed Frameworks */,
-				F82323701E9080DD004FA8DC /* NaturalLanguageUnderstandingV1.framework in Embed Frameworks */,
-				F82323721E9080DD004FA8DC /* PersonalityInsightsV2.framework in Embed Frameworks */,
-				F82323781E9080DD004FA8DC /* RestKit.framework in Embed Frameworks */,
-				F823237C1E9080DD004FA8DC /* SpeechToTextV1.framework in Embed Frameworks */,
-				F82323681E9080DD004FA8DC /* DiscoveryV1.framework in Embed Frameworks */,
-				F82323601E9080DD004FA8DC /* AlchemyLanguageV1.framework in Embed Frameworks */,
-				F823236E1E9080DD004FA8DC /* NaturalLanguageClassifierV1.framework in Embed Frameworks */,
-				F82323741E9080DD004FA8DC /* PersonalityInsightsV3.framework in Embed Frameworks */,
+				F872E4DF1E90907800C8D8D6 /* TextToSpeechV1.framework in Embed Frameworks */,
+				F872E4CD1E90907800C8D8D6 /* LanguageTranslatorV2.framework in Embed Frameworks */,
+				F872E4C31E90907800C8D8D6 /* AlchemyVisionV1.framework in Embed Frameworks */,
+				F872E4E11E90907800C8D8D6 /* ToneAnalyzerV3.framework in Embed Frameworks */,
+				F872E4D71E90907800C8D8D6 /* RelationshipExtractionV1Beta.framework in Embed Frameworks */,
+				F872E4BF1E90907800C8D8D6 /* AlchemyDataNewsV1.framework in Embed Frameworks */,
+				F872E4C71E90907800C8D8D6 /* DialogV1.framework in Embed Frameworks */,
+				F872E4C51E90907800C8D8D6 /* ConversationV1.framework in Embed Frameworks */,
+				F872E4DB1E90907800C8D8D6 /* RetrieveAndRankV1.framework in Embed Frameworks */,
+				F872E4E31E90907800C8D8D6 /* TradeoffAnalyticsV1.framework in Embed Frameworks */,
+				F872E4CB1E90907800C8D8D6 /* DocumentConversionV1.framework in Embed Frameworks */,
+				F872E4E51E90907800C8D8D6 /* VisualRecognitionV3.framework in Embed Frameworks */,
+				F872E4D11E90907800C8D8D6 /* NaturalLanguageUnderstandingV1.framework in Embed Frameworks */,
+				F872E4D31E90907800C8D8D6 /* PersonalityInsightsV2.framework in Embed Frameworks */,
+				F872E4D91E90907800C8D8D6 /* RestKit.framework in Embed Frameworks */,
+				F872E4DD1E90907800C8D8D6 /* SpeechToTextV1.framework in Embed Frameworks */,
+				F872E4C91E90907800C8D8D6 /* DiscoveryV1.framework in Embed Frameworks */,
+				F872E4C11E90907800C8D8D6 /* AlchemyLanguageV1.framework in Embed Frameworks */,
+				F872E4CF1E90907800C8D8D6 /* NaturalLanguageClassifierV1.framework in Embed Frameworks */,
+				F872E4D51E90907800C8D8D6 /* PersonalityInsightsV3.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +91,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		72AB24E91E9051240067C93F /* HertzChauffeur-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HertzChauffeur-Bridging-Header.h"; sourceTree = "<group>"; };
 		72AB24EA1E9051250067C93F /* XiveleyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiveleyConnect.m; sourceTree = "<group>"; };
 		F80F586B1E9041D100B00EA2 /* HertzChauffeur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HertzChauffeur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80F586E1E9041D100B00EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +100,27 @@
 		F80F58781E9041D100B00EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F80F587A1E9041D100B00EA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8263BB71E9068E700B2281D /* logo_hertz_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_hertz_app.png; sourceTree = "<group>"; };
+		F872E4941E90905800C8D8D6 /* AlchemyDataNewsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyDataNewsV1.framework; path = frmws/AlchemyDataNewsV1.framework; sourceTree = "<group>"; };
+		F872E4951E90905800C8D8D6 /* AlchemyLanguageV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyLanguageV1.framework; path = frmws/AlchemyLanguageV1.framework; sourceTree = "<group>"; };
+		F872E4961E90905800C8D8D6 /* AlchemyVisionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlchemyVisionV1.framework; path = frmws/AlchemyVisionV1.framework; sourceTree = "<group>"; };
+		F872E4971E90905800C8D8D6 /* ConversationV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ConversationV1.framework; path = frmws/ConversationV1.framework; sourceTree = "<group>"; };
+		F872E4981E90905800C8D8D6 /* DialogV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DialogV1.framework; path = frmws/DialogV1.framework; sourceTree = "<group>"; };
+		F872E4991E90905800C8D8D6 /* DiscoveryV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscoveryV1.framework; path = frmws/DiscoveryV1.framework; sourceTree = "<group>"; };
+		F872E49A1E90905800C8D8D6 /* DocumentConversionV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DocumentConversionV1.framework; path = frmws/DocumentConversionV1.framework; sourceTree = "<group>"; };
+		F872E49B1E90905800C8D8D6 /* LanguageTranslatorV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LanguageTranslatorV2.framework; path = frmws/LanguageTranslatorV2.framework; sourceTree = "<group>"; };
+		F872E49C1E90905800C8D8D6 /* NaturalLanguageClassifierV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageClassifierV1.framework; path = frmws/NaturalLanguageClassifierV1.framework; sourceTree = "<group>"; };
+		F872E49D1E90905800C8D8D6 /* NaturalLanguageUnderstandingV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguageUnderstandingV1.framework; path = frmws/NaturalLanguageUnderstandingV1.framework; sourceTree = "<group>"; };
+		F872E49E1E90905800C8D8D6 /* PersonalityInsightsV2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV2.framework; path = frmws/PersonalityInsightsV2.framework; sourceTree = "<group>"; };
+		F872E49F1E90905800C8D8D6 /* PersonalityInsightsV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PersonalityInsightsV3.framework; path = frmws/PersonalityInsightsV3.framework; sourceTree = "<group>"; };
+		F872E4A01E90905800C8D8D6 /* RelationshipExtractionV1Beta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RelationshipExtractionV1Beta.framework; path = frmws/RelationshipExtractionV1Beta.framework; sourceTree = "<group>"; };
+		F872E4A11E90905800C8D8D6 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RestKit.framework; path = frmws/RestKit.framework; sourceTree = "<group>"; };
+		F872E4A21E90905800C8D8D6 /* RetrieveAndRankV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RetrieveAndRankV1.framework; path = frmws/RetrieveAndRankV1.framework; sourceTree = "<group>"; };
+		F872E4A31E90905800C8D8D6 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = frmws/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		F872E4A41E90905800C8D8D6 /* TextToSpeechV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextToSpeechV1.framework; path = frmws/TextToSpeechV1.framework; sourceTree = "<group>"; };
+		F872E4A51E90905800C8D8D6 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = frmws/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		F872E4A61E90905800C8D8D6 /* TradeoffAnalyticsV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TradeoffAnalyticsV1.framework; path = frmws/TradeoffAnalyticsV1.framework; sourceTree = "<group>"; };
+		F872E4A71E90905800C8D8D6 /* VisualRecognitionV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VisualRecognitionV3.framework; path = frmws/VisualRecognitionV3.framework; sourceTree = "<group>"; };
+		F872E4A81E90905800C8D8D6 /* XivelySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XivelySDK.framework; path = frmws/XivelySDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,27 +128,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82323881E908120004FA8DC /* XivelySDK.framework in Frameworks */,
-				F823237D1E9080DD004FA8DC /* TextToSpeechV1.framework in Frameworks */,
-				F823236B1E9080DD004FA8DC /* LanguageTranslatorV2.framework in Frameworks */,
-				F82323611E9080DD004FA8DC /* AlchemyVisionV1.framework in Frameworks */,
-				F823237F1E9080DD004FA8DC /* ToneAnalyzerV3.framework in Frameworks */,
-				F82323751E9080DD004FA8DC /* RelationshipExtractionV1Beta.framework in Frameworks */,
-				F823235D1E9080DD004FA8DC /* AlchemyDataNewsV1.framework in Frameworks */,
-				F82323651E9080DD004FA8DC /* DialogV1.framework in Frameworks */,
-				F82323631E9080DD004FA8DC /* ConversationV1.framework in Frameworks */,
-				F82323791E9080DD004FA8DC /* RetrieveAndRankV1.framework in Frameworks */,
-				F82323811E9080DD004FA8DC /* TradeoffAnalyticsV1.framework in Frameworks */,
-				F82323691E9080DD004FA8DC /* DocumentConversionV1.framework in Frameworks */,
-				F82323831E9080DD004FA8DC /* VisualRecognitionV3.framework in Frameworks */,
-				F823236F1E9080DD004FA8DC /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
-				F82323711E9080DD004FA8DC /* PersonalityInsightsV2.framework in Frameworks */,
-				F82323771E9080DD004FA8DC /* RestKit.framework in Frameworks */,
-				F823237B1E9080DD004FA8DC /* SpeechToTextV1.framework in Frameworks */,
-				F82323671E9080DD004FA8DC /* DiscoveryV1.framework in Frameworks */,
-				F823235F1E9080DD004FA8DC /* AlchemyLanguageV1.framework in Frameworks */,
-				F823236D1E9080DD004FA8DC /* NaturalLanguageClassifierV1.framework in Frameworks */,
-				F82323731E9080DD004FA8DC /* PersonalityInsightsV3.framework in Frameworks */,
+				F872E4BE1E90907800C8D8D6 /* AlchemyDataNewsV1.framework in Frameworks */,
+				F872E4E41E90907800C8D8D6 /* VisualRecognitionV3.framework in Frameworks */,
+				F872E4E01E90907800C8D8D6 /* ToneAnalyzerV3.framework in Frameworks */,
+				F872E4C61E90907800C8D8D6 /* DialogV1.framework in Frameworks */,
+				F872E4BD1E90905800C8D8D6 /* XivelySDK.framework in Frameworks */,
+				F872E4DA1E90907800C8D8D6 /* RetrieveAndRankV1.framework in Frameworks */,
+				F872E4C01E90907800C8D8D6 /* AlchemyLanguageV1.framework in Frameworks */,
+				F872E4C21E90907800C8D8D6 /* AlchemyVisionV1.framework in Frameworks */,
+				F872E4E21E90907800C8D8D6 /* TradeoffAnalyticsV1.framework in Frameworks */,
+				F872E4C41E90907800C8D8D6 /* ConversationV1.framework in Frameworks */,
+				F872E4CE1E90907800C8D8D6 /* NaturalLanguageClassifierV1.framework in Frameworks */,
+				F872E4D01E90907800C8D8D6 /* NaturalLanguageUnderstandingV1.framework in Frameworks */,
+				F872E4CA1E90907800C8D8D6 /* DocumentConversionV1.framework in Frameworks */,
+				F872E4DC1E90907800C8D8D6 /* SpeechToTextV1.framework in Frameworks */,
+				F872E4D41E90907800C8D8D6 /* PersonalityInsightsV3.framework in Frameworks */,
+				F872E4D61E90907800C8D8D6 /* RelationshipExtractionV1Beta.framework in Frameworks */,
+				F872E4D81E90907800C8D8D6 /* RestKit.framework in Frameworks */,
+				F872E4CC1E90907800C8D8D6 /* LanguageTranslatorV2.framework in Frameworks */,
+				F872E4DE1E90907800C8D8D6 /* TextToSpeechV1.framework in Frameworks */,
+				F872E4D21E90907800C8D8D6 /* PersonalityInsightsV2.framework in Frameworks */,
+				F872E4C81E90907800C8D8D6 /* DiscoveryV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,27 +158,27 @@
 		722888B31E90479D00C23F4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F81011991E907A8B0055B381 /* AlchemyDataNewsV1.framework */,
-				F810119A1E907A8B0055B381 /* AlchemyLanguageV1.framework */,
-				F810119B1E907A8B0055B381 /* AlchemyVisionV1.framework */,
-				F810119C1E907A8B0055B381 /* ConversationV1.framework */,
-				F810119D1E907A8B0055B381 /* DialogV1.framework */,
-				F810119E1E907A8B0055B381 /* DiscoveryV1.framework */,
-				F810119F1E907A8B0055B381 /* DocumentConversionV1.framework */,
-				F81011A01E907A8B0055B381 /* LanguageTranslatorV2.framework */,
-				F81011A11E907A8B0055B381 /* NaturalLanguageClassifierV1.framework */,
-				F81011A21E907A8B0055B381 /* NaturalLanguageUnderstandingV1.framework */,
-				F81011A31E907A8B0055B381 /* PersonalityInsightsV2.framework */,
-				F81011A41E907A8B0055B381 /* PersonalityInsightsV3.framework */,
-				F81011A51E907A8B0055B381 /* RelationshipExtractionV1Beta.framework */,
-				F81011A61E907A8B0055B381 /* RestKit.framework */,
-				F81011A71E907A8B0055B381 /* RetrieveAndRankV1.framework */,
-				F81011A81E907A8B0055B381 /* SpeechToTextV1.framework */,
-				F81011A91E907A8B0055B381 /* TextToSpeechV1.framework */,
-				F81011AA1E907A8B0055B381 /* ToneAnalyzerV3.framework */,
-				F81011AB1E907A8B0055B381 /* TradeoffAnalyticsV1.framework */,
-				F81011AC1E907A8B0055B381 /* VisualRecognitionV3.framework */,
-				F81011AD1E907A8B0055B381 /* XivelySDK.framework */,
+				F872E4941E90905800C8D8D6 /* AlchemyDataNewsV1.framework */,
+				F872E4951E90905800C8D8D6 /* AlchemyLanguageV1.framework */,
+				F872E4961E90905800C8D8D6 /* AlchemyVisionV1.framework */,
+				F872E4971E90905800C8D8D6 /* ConversationV1.framework */,
+				F872E4981E90905800C8D8D6 /* DialogV1.framework */,
+				F872E4991E90905800C8D8D6 /* DiscoveryV1.framework */,
+				F872E49A1E90905800C8D8D6 /* DocumentConversionV1.framework */,
+				F872E49B1E90905800C8D8D6 /* LanguageTranslatorV2.framework */,
+				F872E49C1E90905800C8D8D6 /* NaturalLanguageClassifierV1.framework */,
+				F872E49D1E90905800C8D8D6 /* NaturalLanguageUnderstandingV1.framework */,
+				F872E49E1E90905800C8D8D6 /* PersonalityInsightsV2.framework */,
+				F872E49F1E90905800C8D8D6 /* PersonalityInsightsV3.framework */,
+				F872E4A01E90905800C8D8D6 /* RelationshipExtractionV1Beta.framework */,
+				F872E4A11E90905800C8D8D6 /* RestKit.framework */,
+				F872E4A21E90905800C8D8D6 /* RetrieveAndRankV1.framework */,
+				F872E4A31E90905800C8D8D6 /* SpeechToTextV1.framework */,
+				F872E4A41E90905800C8D8D6 /* TextToSpeechV1.framework */,
+				F872E4A51E90905800C8D8D6 /* ToneAnalyzerV3.framework */,
+				F872E4A61E90905800C8D8D6 /* TradeoffAnalyticsV1.framework */,
+				F872E4A71E90905800C8D8D6 /* VisualRecognitionV3.framework */,
+				F872E4A81E90905800C8D8D6 /* XivelySDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,11 +415,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U642UQEDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frmws",
+				);
 				INFOPLIST_FILE = HertzChauffeur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+					"$(PROJECT_DIR)/frmws",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamnel.HertzChauffeur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,11 +439,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4U642UQEDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/frmws",
+				);
 				INFOPLIST_FILE = HertzChauffeur/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/xively-mobile-sdk-ios/XivelySDKiOS/build",
+					"$(PROJECT_DIR)/frmws",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamnel.HertzChauffeur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
