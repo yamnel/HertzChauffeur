@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     private var speechRecognitionTask: SFSpeechRecognitionTask?
     private let audioEngine = AVAudioEngine()
     private var textToSendToWatson: String = ""
-    private var rawReplyFromWarson: Context?
+    private var rawReplyFromWatson: Context?
     
     var systemToChange: String? // What we car system we want to change
     var systemValue: String?  // What we are changing it to
@@ -102,13 +102,13 @@ class ViewController: UIViewController {
             // Send to Watson.
             textToSendToWatson = myTextView.text.lowercased();
             
-            
-            
             print(textToSendToWatson.lowercased()); // Testing
 //            print(validateCommand(textToValidate: textToSendToWatson.lowercased()))
             
-            rawReplyFromWarson =  sendToWatson(voiceCommand: textToSendToWatson)
-            
+            rawReplyFromWatson =  sendToWatson(voiceCommand: textToSendToWatson)
+//            for string in rawReplyFromWatson?.json {
+//                
+//            }
         }
     }
     
