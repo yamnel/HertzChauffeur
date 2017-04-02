@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		72AB24EB1E9051250067C93F /* XiveleyConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AB24EA1E9051250067C93F /* XiveleyConnect.m */; };
-		F80E776B1E90BBDB00A2395A /* watsonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E776A1E90BBDB00A2395A /* watsonicon.png */; };
-		F80E776D1E90BD8F00A2395A /* DollarLogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = F80E776C1E90BD8F00A2395A /* DollarLogo.gif */; };
 		F80E776F1E90BD9A00A2395A /* ThriftyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */; };
+		F80E77721E90C34900A2395A /* dollarwide.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E77701E90C34900A2395A /* dollarwide.png */; };
+		F80E77731E90C34900A2395A /* watsonicon.png in Resources */ = {isa = PBXBuildFile; fileRef = F80E77711E90C34900A2395A /* watsonicon.png */; };
 		F80F586F1E9041D100B00EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F586E1E9041D100B00EA2 /* AppDelegate.swift */; };
 		F80F58711E9041D100B00EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80F58701E9041D100B00EA2 /* ViewController.swift */; };
 		F80F58741E9041D100B00EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80F58721E9041D100B00EA2 /* Main.storyboard */; };
@@ -95,9 +95,9 @@
 
 /* Begin PBXFileReference section */
 		72AB24EA1E9051250067C93F /* XiveleyConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiveleyConnect.m; sourceTree = "<group>"; };
-		F80E776A1E90BBDB00A2395A /* watsonicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = watsonicon.png; path = ../../../../Desktop/watsonicon.png; sourceTree = "<group>"; };
-		F80E776C1E90BD8F00A2395A /* DollarLogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = DollarLogo.gif; path = ../../../../Desktop/DollarLogo.gif; sourceTree = "<group>"; };
 		F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThriftyLogo.png; sourceTree = "<group>"; };
+		F80E77701E90C34900A2395A /* dollarwide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dollarwide.png; sourceTree = "<group>"; };
+		F80E77711E90C34900A2395A /* watsonicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = watsonicon.png; sourceTree = "<group>"; };
 		F80F586B1E9041D100B00EA2 /* HertzChauffeur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HertzChauffeur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F80F586E1E9041D100B00EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F80F58701E9041D100B00EA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -215,10 +215,10 @@
 				F80F58751E9041D100B00EA2 /* Assets.xcassets */,
 				F80F58771E9041D100B00EA2 /* LaunchScreen.storyboard */,
 				F80F587A1E9041D100B00EA2 /* Info.plist */,
-				F80E776C1E90BD8F00A2395A /* DollarLogo.gif */,
 				F8263BB71E9068E700B2281D /* logo_hertz_app.png */,
+				F80E77701E90C34900A2395A /* dollarwide.png */,
+				F80E77711E90C34900A2395A /* watsonicon.png */,
 				F80E776E1E90BD9A00A2395A /* ThriftyLogo.png */,
-				F80E776A1E90BBDB00A2395A /* watsonicon.png */,
 			);
 			path = HertzChauffeur;
 			sourceTree = "<group>";
@@ -284,10 +284,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F80E77721E90C34900A2395A /* dollarwide.png in Resources */,
 				F80F58791E9041D100B00EA2 /* LaunchScreen.storyboard in Resources */,
 				F80E776F1E90BD9A00A2395A /* ThriftyLogo.png in Resources */,
-				F80E776D1E90BD8F00A2395A /* DollarLogo.gif in Resources */,
-				F80E776B1E90BBDB00A2395A /* watsonicon.png in Resources */,
+				F80E77731E90C34900A2395A /* watsonicon.png in Resources */,
 				F80F58761E9041D100B00EA2 /* Assets.xcassets in Resources */,
 				F8263BB81E9068E700B2281D /* logo_hertz_app.png in Resources */,
 				F80F58741E9041D100B00EA2 /* Main.storyboard in Resources */,
