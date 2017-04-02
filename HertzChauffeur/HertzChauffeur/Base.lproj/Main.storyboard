@@ -93,13 +93,17 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="a3G-DQ-Gcp" firstAttribute="leading" secondItem="vkb-yy-j8m" secondAttribute="trailing" constant="25" id="30h-88-DET"/>
+                            <constraint firstItem="ky7-52-x8W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ry-SO-FMs"/>
+                            <constraint firstItem="9qR-Zi-Pta" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BWC-xy-VXg"/>
                             <constraint firstItem="vkb-yy-j8m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="45" id="Itv-zn-oiE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ky7-52-x8W" secondAttribute="trailing" constant="76" id="Lmr-gR-CPE"/>
+                            <constraint firstItem="LY2-7I-Xn8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UJS-lp-afu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yRO-LM-Yrc" secondAttribute="trailing" constant="37.333333333333371" id="Xkv-S5-atJ"/>
                             <constraint firstItem="ky7-52-x8W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="76" id="bfJ-Ry-MQw"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vty-kU-bxJ" secondAttribute="trailing" constant="354" id="dt3-sJ-gBZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="a3G-DQ-Gcp" secondAttribute="trailing" constant="96" id="g55-WS-f2t"/>
                             <constraint firstItem="LY2-7I-Xn8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="ghE-gB-rMk"/>
+                            <constraint firstItem="yRO-LM-Yrc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kvq-ZC-VQY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="LY2-7I-Xn8" secondAttribute="trailing" constant="51" id="mxG-Yt-Pue"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9qR-Zi-Pta" secondAttribute="trailing" constant="13" id="nkR-8L-Q2c"/>
                             <constraint firstItem="yRO-LM-Yrc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="37.666666666666657" id="oCL-Wj-rEo"/>
